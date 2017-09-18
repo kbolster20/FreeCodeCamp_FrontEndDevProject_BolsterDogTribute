@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bolster Dog Tribute</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- my custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- so I can use font-awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" -->
+</head>
+
+<body>
+
+    <!-- This is the header of the page, I'm using a jumbotron so I can learn it -->
+    <header class="jumbotron jumbotron-fluid bg-info text-white mb-4">
+        <div class="container mb-0">
+            <div class="row mb-0">
+
+                <div class="col-md-8 mb-0">
+                    <div class="display-1 mb-2">Bolster Dog Tribute</div>
+                    <p class="lead mb-0">Peanut and Maverick are a big part of our family and amazing pets. They are very different in temperment, likes and dislikes but couldn't be happier to be doggy sister and brother. Learn all about them below to see why we love them
+                        so much and what they add to our family!</p>
+                </div>
+                <!--col-sm-8-->
+
+                <div class="col-md-4 mb-0">
+                    <img class="img-fluid mb-0" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PeanutAndMav_sm.png" alt="Peanut and Maverick Photo">
+                </div>
+                <!-- col-4-->
+            </div>
+            <!--row-->
+        </div>
+        <!--container-->
+    </header>
+    <!-- end header jumbotron section -->
+
+    <!-- This section will contain the cards where the general info about the dogs but you can drill down to get more specfic info -->
+    <!-- START OF CARD SECTION -->
+    <div class="container">
+        <div class="row">
+            <!-- START OF PEANUT CARD -->
+            <div class="col-sm-6">
+                <section class="card mb-3" id="peanut">
+                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/Peanut800x600.png" alt="Peanut Photo">
+                    <div class="card-block">
+                        <h2 class="card-title">Peanut Walnut Bolster</h2>
+                        <h5 class="card-subtitle">High Energy Super Affectionate Pup</h5>
+                        <p class="card-text mt-3">Peanut became a member of the Bolster family when we adopted her from
+                            <a href="http://eastcoastadoptions.com" target="_blank">East Coast Adoption Agency</a> on 2/26/2016. This little lady was only 6 weeks old when we got her and hailed from Tenessee and made her way to Central NY. She was the
+                            perfect mix of energetic but not over-bearing and did not seem to try to dominate her brothers and sisters. After looking at many dogs in our search for the perfect pup Peanut checked all the boxes and we were in love before
+                            we got in the car to come home.
+                        </p>
+
+
+                        <!-- This button will toggle whether the Peanut Accordion is visible on the screen or not -->
+                        <a href="#peanutpicslocation"><button class="btn btn-primary mb-0" id="peanutlearnmore" 
+                                                onclick="EvaluateLearnMoreButtonClick('#peanutlearnmore')" 
+                                        aria-expanded="Link to Peanut Accordion">Learn More About Peanut</button></a>
+
+                    </div>
+                    <!-- card-block -->
+                    <div class="card-footer">
+                        <!-- I added a javascript function that will show the proper accordion in case it's not open 
+                     when the link is clicked. It's at the bottom in the scripts section -->
+                        <a class="card-link" onclick="ShowAccordionContainer('#peanutaccordioncontainer','#maverickaccordioncontainer')" data-toggle="collapse" data-parent="#accordion" href="#peanutpics">Peanut Pics</a>
+                        <a class="card-link" onclick="ShowAccordionContainer('#peanutaccordioncontainer','#maverickaccordioncontainer')" data-toggle="collapse" data-parent="#accordion" href="#peanutbreed">Peanut Breed Breakdown</a>
+                        <a class="card-link" onclick="ShowAccordionContainer('#peanutaccordioncontainer','#maverickaccordioncontainer')" data-toggle="collapse" data-parent="#accordion" href="#peanuttemperment">Peanut Temperment</a>
+                    </div>
+                    <!-- card footer -->
+                </section>
+            </div>
+            <!-- col-sm-6 -->
+            <!-- END OF PEANUT CARD -->
+
+            <!-- START OF MAVERICK CARD -->
+            <div class="col-sm-6">
+                <section class="card mb-3" id="maverick">
+                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/Maverick800x600.png" alt="Maverick Photo">
+                    <div class="card-block">
+                        <h2 class="card-title">Maverick Paverick Bolster</h2>
+                        <h5 class="card-subtitle">Low Energy Super Chill Pup</h5>
+                        <p class="card-text mt-3">Maverick became a member of the Bolster family when we adopted him from
+                            <a href="http://https://www.helpinghoundsdogrescue.org/" target="_blank">Helping Hounds Dog Rescue</a> on 11/12/2016. This little guy was 11 weeks old when we got him and came by way of Missippi & Alabama then up to Central
+                            NY. He was the the most chilled out pup we'd ever seen. He didn't seem to have a dominant bone in his body. When he met Peanut we saw some real spunk. This guy loves to play with other dogs and chill with his human counterparts.
+                            He's just one cool dog.</p>
+
+                        <!-- This button will toggle whether the Maverick Accordion is visible on the screen or not -->
+                        <a href="#maverickpics"><button class="btn btn-primary mb-0" 
+                                                  onclick="EvaluateLearnMoreButtonClick('#mavericklearnmore')"
+                                                  aria-expanded="Link to Maverick Accordion" id="mavericklearnmore">Learn More About Maverick</button></a>
+                    </div>
+                    <!-- card-block -->
+
+                    <div class="card-footer">
+                        <!-- I added a javascript function that will show the proper accordion in case it's not open 
+                     when the link is clicked. It's at the bottom in the scripts section -->
+                        <a class="card-link" onclick="ShowAccordionContainer('#maverickaccordioncontainer','#peanutaccordioncontainer')" data-toggle="collapse" data-parent="#accordion" href="#maverickpics">Maverick Pics</a>
+                        <a class="card-link" onclick="ShowAccordionContainer('#maverickaccordioncontainer','#peanutaccordioncontainer')" data-toggle="collapse" data-parent="#accordion" href="#maverickbreed">Maverick Breed Breakdown</a>
+                        <a class="card-link" onclick="ShowAccordionContainer('#maverickaccordioncontainer','#peanutaccordioncontainer')" data-toggle="collapse" data-parent="#accordion" href="#mavericktemperment">Maverick Temperment</a>
+                    </div>
+                    <!-- card footer -->
+                </section>
+            </div>
+            <!-- col-xs-6 -->
+            <!-- END OF MAVERICK CARD -->
+
+        </div>
+        <!-- row -->
+    </div>
+    <!-- opening div for card section -->
+    <!-- END OF CARD SECTION -->
+
+    <!-- START OF ACCORDION SECTION -->
+    <!-- START OF PEANUT ACCORDION-->
+    <div class="container collapse" id="peanutaccordioncontainer" aria-expanded="false">
+        <div id="peanutaccordion" class="accordion">
+            <div class="card m-b-0">
+                <!-- START PEANUT PICS SECTION -->
+                <h5>
+                    <div class="card-header collapsed" data-toggle="collapse" data-parent="#peanutaccordion" href="#peanutpics">
+                        <a class="card-title  ml-2" href="#peanutpicslocation">
+                    Peanut Pics
+                </a>
+                    </div>
+                    <!-- card-title -->
+                </h5>
+
+                <div id="peanutpics" class="card-block collapse">
+
+                    <!-- Start Peanut Pics with captions -->
+                    <div class="container">
+                        <!-- set the container -->
+                        <!-- ROW 1 establish the 1st row within the container that will be filled with 3 images per row after sm bp-->
+                        <div class="row mb-3">
+
+                            <!-- Peanut first time meeting pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PeanutFirstMeeting_400x400.png" alt="First time meeting Peanut">
+                                    <p class="card-text ml-3 mt-1 mb-1">The first time Bella met Peanut. It was love at first sight.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+                            <a name="peanutpicslocation"></a>
+                            <!-- Peanut drive home pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PeanutDriveHome_400x400.png" alt="Peanut's Drive Home">
+                                    <p class="card-text ml-3 mt-1 mb-1">Where we adopted Peanut was about an hour and a half drive from our house. Bella loved getting to hold her adorable bundle the whole way home.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Peanut Sees Her Room pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PeanutSeesHerRoom_400x400.png" alt="Peanut Sees Her Room">
+                                    <p class="card-text ml-3 mt-1 mb-1">Peanut was excited to see her new room and where she'd be sleeping the rest of her life.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4 -->
+                        </div>
+                        <!-- row -->
+
+
+                        <!-- ROW 2 establish the 2nd row within the container that will be filled with 3 images per row after sm bp-->
+                        <div class="row mb-3">
+
+                            <!-- Peanut baby pose pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PeanutPoseBaby_400x400.png" alt="Peanut's patented pose as a baby">
+                                    <p class="card-text ml-3 mt-1 mb-1">The first time I saw Peanut lay like this I rushed to get a pic thinking it was a once in a lifetime event. Now I know that's just how she rolls.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Peanut adult pose pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PeanutPoseAdult_400x400.png" alt="Peanut's patented pose as an adult">
+                                    <p class="card-text ml-3 mt-1 mb-1">This is how she sleeps. All the time. It's hilarious but must be comfy for her. </p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Peanut hangs with her cus pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PeanutSleeping_400x400.png" alt="Peanut sleeps in crazy positions">
+                                    <p class="card-text ml-3 mt-1 mb-1">Just in case you didn't believe me...</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4 -->
+                        </div>
+                        <!-- row -->
+
+                        <!-- ROW 3 establish the 3rd row within the container that will be filled with 3 images per row after sm bp-->
+                        <div class="row mb-3">
+
+                            <!-- Peanut sleeping on hearth pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PeanutHearthSleeping_400x400.png" alt="Peanut falls asleep sitting up">
+                                    <p class="card-text ml-3 mt-1 mb-1">Being a pup is hard work. Sometimes you need to take a nap sitting up in front of the fire. Laying down takes too much effort</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Peanut spayed cone pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PeanutGetsFixed_400x400.png" alt="Peanut got spayed. Report: hates cones.">
+                                    <p class="card-text ml-3 mt-1 mb-1">So Peanut got spayed. She was NOT a fan of the cone. </p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Peanut swimming socks pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PeanutTriesSwimming_400x400.png" alt="Peanut doesn't love our pool">
+                                    <p class="card-text ml-3 mt-1 mb-1">Peanut is NOT a fan of our pool, not even with her super cool swim socks! Go figure...</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4 -->
+                        </div>
+                        <!-- row -->
+
+                        <!-- ROW 4 establish the 4th row within the container that will be filled with 3 images per row after sm bp-->
+                        <div class="row mb-3">
+
+                            <!-- Peanut nurse pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PeanutNurse_400x400.png" alt="Peanut is a great nurse">
+                                    <p class="card-text ml-3 mt-1 mb-1">Peanut takes amazing care of Bella when she's sick.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Peanut construction worker pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PeanutConstructionWorker_400x400.png" alt="Peanut is not a good construction worker">
+                                    <p class="card-text ml-3 mt-1 mb-1">Personally, I think she makes a much better nurse than construction apprentice. She took too many naps.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Peanut happy place pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PeanutHappyPlace_400x400.png" alt="Peanut Loves the Pond!">
+                                    <p class="card-text ml-3 mt-1 mb-1">Peanut's happy place, she LOVES it! Miles of trails for the dogs to run free. </p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4 -->
+                        </div>
+                        <!-- row -->
+
+                        <!-- ROW 5 establish the 5th row within the container that will be filled with 3 images per row after sm bp-->
+                        <div class="row mb-3">
+
+                            <!-- Peanut mav teaches cuddling pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PeanutMavTeachesCuddles_400x400.png" alt="Peanut wasn't sure about cuddling at first">
+                                    <p class="card-text ml-3 mt-1 mb-1">When we first got Maverick, Peanut wasn't so sure about this doggy cuddling thing. As you'll see they are quite the pair now.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Puppy cuddles 2 pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PuppyCuddles2_400x400.png" alt="Puppy cuddles 2">
+                                    <p class="card-text ml-3 mt-1 mb-1">They were asleep like this before I grabbed my phone to take a pic.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Puppy cuddles 3 pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PuppyCuddles3_400x400.png" alt="Puppy cuddles 3">
+                                    <p class="card-text ml-3 mt-1 mb-1">They go in this room because it's very cool in the summer - but the heat doesn't stop them from cuddling!</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4 -->
+                        </div>
+                        <!-- row -->
+
+
+                        <!-- ROW 6 establish the 6th row within the container that will be filled with 3 images per row after sm bp-->
+                        <div class="row mb-3">
+
+                            <!-- Puppy cuddles 4 pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PuppyCuddles4_400x400.png" alt="Puppy cuddles 4">
+                                    <p class="card-text ml-3 mt-1 mb-1">Sometimes it's easier to get a pic of the dogs looking at the camera than the kids!</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Puppy cuddles 6 pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PuppyCuddles5_400x400.png" alt="Puppy cuddles 5">
+                                    <p class="card-text ml-3 mt-1 mb-1">They are under the desk in my office - this is where and how they hang when I'm working.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Puppy cuddles 6 pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PuppyCuddles6_400x400.png" alt="Puppy cuddles 6">
+                                    <p class="card-text ml-3 mt-1 mb-1">Not sure, but these guys look like they're up to something. </p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4 -->
+                        </div>
+                        <!-- row -->
+
+                        <!-- ROW 7 establish the 7th row within the container that will be filled with 3 images per row after sm bp-->
+                        <div class="row mb-3">
+
+                            <!-- Puppy cuddles 7 pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PuppyCuddles7_400x400.png" alt="Puppy cuddles 7">
+                                    <p class="card-text ml-3 mt-1 mb-1">Everyone wants the spot in front of the fireplace in the winter.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Puppy cuddles 8 pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PuppyCuddles8_400x400.png" alt="Puppy cuddles 8">
+                                    <p class="card-text ml-3 mt-1 mb-1">This time they compromised and shared the front row spot to the fireplace.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Puppy cuddles 9 pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PuppyCuddles9_400x400.png" alt="Puppy cuddles 9">
+                                    <p class="card-text ml-3 mt-1 mb-1">Laying in the sun until you pant is a must do activity for these dogs each day.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4 -->
+                        </div>
+                        <!-- row -->
+                        <!-- End Peanut Pics with captions -->
+                    </div>
+                    <!-- container -->
+                </div>
+                <!-- peanutpics -->
+                <!-- END PEANUT PICS SECTION -->
+
+                <!-- START PEANUT BREED SECTION -->
+                <h5>
+                    <div class="card-header collapsed" data-toggle="collapse" data-parent="#peanutaccordion" href="#peanutbreed">
+                        <a class="card-title ml-2" href="#">
+               Peanut Breed
+                </a>
+                    </div>
+                    <!-- card header -->
+                </h5>
+                <div id="peanutbreed" class="card-block collapse">
+                    <p>For Christmas we purchased Wisdom Panel DNA tests for our rescue pups. I was anxious to see what breeds they actually were. Peanut was labeled as an Amercian Bulldog mix when we adopted her. Here's what the Wisdom Panel results showed:
+                    </p>
+                    <img class="img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PeanutBreedGraph.png" alt="Peanut Breed Breakdown Pie Chart">
+                    <img class="img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PeanutBreedKey.png" alt="Peanut Breed Breakdown Key">
+                    <p>I was surprised to not see American Bulldog but not as surprised as I was to see Greyhound! Greyhound??!? This compact, solid little package of snorts and snores reminded me nothing of a greyhound, however, I'm sure it's there somewhere.
+                        :)
+                    </p>
+                </div>
+                <!-- peanut breed -->
+                <!-- END PEANUT BREED SECTION -->
+
+                <!--START PEANUT TEMPERMENT SECTION -->
+                <h5>
+                    <div class="card-header collapsed" data-toggle="collapse" data-parent="#peanutaccordion" href="#peanuttemperment">
+
+                        <a class="card-title ml-2" href="#">
+                     Peanut Temperment
+                </a>
+                    </div>
+                    <!-- card-header -->
+                </h5>
+                <div id="peanuttemperment" class="card-block collapse">
+                    <!--class="panel-collapse collapse">-->
+                    <p>Peanut has a great temperment. She is extremely affectionate and loves her humans very much. She loves to give kisses and her tail wags a mile a minute. When she's excited she wiggles and (not so awesomely) will pee when super excited.</p>
+                    <p>She's shy and skittish and isn't a fan of new situations. She will often shy away from men she doesn't know but once she knows you, you've got a friend for life. Her favorite things are taking walks at the pond where she'll explore
+                        and run for miles and miles. </p>
+                    <a name="peanuttempermentloc"></a>
+                    <p>She loves Maverick and other dogs she knows well but is sometimes wary of dogs she doesn't know. She wants to be with her people at all times, but is fine being home by herself while we're off in the human world. She snorts while awake
+                        and snores like a sailor while asleep. I've never met a dog that loves her people so much and we are blessed as a family to have her!</p>
+                </div>
+                <!-- peanuttemperment-->
+                <!-- END PEANUT TEMPERMENT SECTION -->
+            </div>
+            <!--class="card m-b-0" -->
+        </div>
+        <!-- accordion -->
+    </div>
+    <!--peanutaccordioncontainer -->
+    <!-- END OF PEANUT ACCORDION  -->
+
+
+    <!-- START OF MAVERICK ACCORDION-->
+    <div class="container collapse" id="maverickaccordioncontainer" aria-expanded="false">
+        <div id="maverickaccordion" class="accordion">
+            <div class="card m-b-0">
+                <!-- START MAVERICK PICS SECTION -->
+                <h5>
+                    <div class="card-header collapsed" data-toggle="collapse" data-parent="#maverickaccordion" href="#maverickpics">
+                        <a class="card-title  ml-2" href="#">
+                    Maverick Pics
+                </a>
+                    </div>
+                    <!-- card-title -->
+                </h5>
+
+                <div id="maverickpics" class="card-block collapse">
+
+                    <!-- Start Maverick Pics with captions -->
+                    <div class="container">
+                        <!-- set the container -->
+                        <!-- ROW 1 establish the 1st row within the container that will be filled with 3 images per row after sm bp-->
+                        <div class="row mb-3">
+
+                            <!-- Maverick first time seeing pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/MaverickFirstTimeSeeing_400x400.png" alt="First time seeing Maverick">
+                                    <p class="card-text ml-3 mt-1 mb-1">This is the first time we set eyes on this guy at Helping Hounds.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Maverick first day home pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/MaverickFirstDayHome_400x400.png" alt="Maverick's First Day Home">
+                                    <p class="card-text ml-3 mt-1 mb-1">I think he was a little overwhelmed at first with the amount of space and all the attention.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Maverick First Day Cuddles pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/MaverickFirstDayCuddles_400x400.png" alt="Maverick First Day Cuddles">
+                                    <p class="card-text ml-3 mt-1 mb-1">But soon enough he was soaking it in and couldn't be happier.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4 -->
+                        </div>
+                        <!-- row -->
+
+
+                        <!-- ROW 2 establish the 2nd row within the container that will be filled with 3 images per row after sm bp-->
+                        <div class="row mb-3">
+
+                            <!-- Maverick sleeps in bed -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/MaverickGetsToSleepInBed_400x400.png" alt="Maverick Sleeps In Bed">
+                                    <p class="card-text ml-3 mt-1 mb-1">And just like that he was sleeping in bed just like every other member of the family. I think he likes this being part of a family thing. :)</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Maverick fist time to pond pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/MaverickFirstTimeToPond_400x400.png" alt="Maverick's First Time to Pond">
+                                    <p class="card-text ml-3 mt-1 mb-1"> And then we were taking him and showing him all of the wonderful things to do around our house. </p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Maverick getting bigger pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/MaverickGettingBigger_400x400.png" alt="Maverick Getting Bigger">
+                                    <p class="card-text ml-3 mt-1 mb-1">He started to grow and become a proud young pup.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4 -->
+                        </div>
+                        <!-- row -->
+
+                        <!-- ROW 3 establish the 3rd row within the container that will be filled with 3 images per row after sm bp-->
+                        <div class="row mb-3">
+
+                            <!-- Maverick getting in trouble pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/MaverickInTrouble_400x400.png" alt="Maverick Puppy Mischief">
+                                    <p class="card-text ml-3 mt-1 mb-1">However, he was still very much a puppy and got into puppy mischief on occasion.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Maverick tissue tornado pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/MaverickTissueTornado_400x400.png" alt="Maverick Tissue Tornado">
+                                    <p class="card-text ml-3 mt-1 mb-1">Tissues, cloth, fabric - just a few of his favorite targets. </p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Maverick Loves The Fire pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/MaverickLovesTheFire_400x400.png" alt="Maverick Loves the Fire">
+                                    <p class="card-text ml-3 mt-1 mb-1">I think one of Maverick's favorite things about being in our home is the fireplace.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4 -->
+                        </div>
+                        <!-- row -->
+
+                        <!-- ROW 4 establish the 4th row within the container that will be filled with 3 images per row after sm bp-->
+                        <div class="row mb-3">
+
+                            <!-- Maverick Love His Toy pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/MaverickLovesHisPresent_400x400.png" alt="Maverick Loves his Toy">
+                                    <p class="card-text ml-3 mt-1 mb-1">We went on vacation and the girls brought this toy home for him. He LOVED it and didn't let it out of his sight for weeks.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Maverick at the pond in spring pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/MaverickAtPondSpring_400x400.png" alt="Maverick At the Pond in Spring">
+                                    <p class="card-text ml-3 mt-1 mb-1">Maverick checks out the pond once the snow and ice has melted. He's now a regular swimmer!</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Maverick happy place pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PeanutHappyPlace_400x400.png" alt="Maverick Loves the Pond too!">
+                                    <p class="card-text ml-3 mt-1 mb-1">Turns out this is Maverick's happy place too, he LOVES it! Miles of trails for the dogs to run free and a pond to swim in. </p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4 -->
+                        </div>
+                        <!-- row -->
+
+                        <!-- ROW 5 establish the 5th row within the container that will be filled with 3 images per row after sm bp-->
+                        <div class="row mb-3">
+
+                            <!-- Maverick teaches cuddling pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PeanutMavTeachesCuddles_400x400.png" alt="Maverick teaches Peanut how to cuddle">
+                                    <p class="card-text ml-3 mt-1 mb-1">When we first got Maverick, Peanut wasn't so sure about this doggy cuddling thing. As you'll see he was an amazing teacher and now they are always cuddling.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Puppy cuddles pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PuppyCuddles2_400x400.png" alt="Puppy Cuddles 2">
+                                    <p class="card-text ml-3 mt-1 mb-1">They were asleep like this before I grabbed my phone to take a pic.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Puppy Cuddles 3 pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PuppyCuddles3_400x400.png" alt="Puppy Cuddles 3">
+                                    <p class="card-text ml-3 mt-1 mb-1">They go in this room because it's very cool in the summer - but the heat doesn't stop them from cuddling!</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4 -->
+                        </div>
+                        <!-- row -->
+
+
+                        <!-- ROW 6 establish the 6th row within the container that will be filled with 3 images per row after sm bp-->
+                        <div class="row mb-3">
+
+                            <!-- Puppy Cuddles 4 pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PuppyCuddles4_400x400.png" alt="Puppy Cuddles 4">
+                                    <p class="card-text ml-3 mt-1 mb-1">Sometimes it's easier to get a pic of the dogs looking at the camera than the kids!</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Puppy cuddles 5 pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PuppyCuddles5_400x400.png" alt="Puppy Cuddles 5">
+                                    <p class="card-text ml-3 mt-1 mb-1">They are under the desk in my office - this is where and how they hang when I'm working.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Puppy Cuddles 6 pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PuppyCuddles6_400x400.png" alt="Puppy Cuddles 6">
+                                    <p class="card-text ml-3 mt-1 mb-1">Not sure, but these guys look like they're up to something. </p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4 -->
+                        </div>
+                        <!-- row -->
+
+                        <!-- ROW 7 establish the 7th row within the container that will be filled with 3 images per row after sm bp-->
+                        <div class="row mb-3">
+
+                            <!-- PPuppy Cuddles 7 pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PuppyCuddles7_400x400.png" alt="Puppy Cuddles 7">
+                                    <p class="card-text ml-3 mt-1 mb-1">Everyone wants the spot in front of the fireplace in the winter.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Puppy cuddles 8 pic -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PuppyCuddles8_400x400.png" alt="Puppy Cuddles 8">
+                                    <p class="card-text ml-3 mt-1 mb-1">This time they compromised and shared the front row spot to the fireplace.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4-->
+
+                            <!-- Puppy Cuddles 9 -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/PuppyCuddles9_400x400.png" alt="Puppy Cuddles 9">
+                                    <p class="card-text ml-3 mt-1 mb-1">Laying in the sun until you pant is a must do activity for these dogs each day.</p>
+                                </div>
+                                <!-- card -->
+                            </div>
+                            <!-- col-sm-4 -->
+                        </div>
+                        <!-- row -->
+                        <!-- End Maverick Pics with captions -->
+                    </div>
+                    <!-- container -->
+                </div>
+                <!-- maverickpics -->
+                <!-- END MAVERICK PICS SECTION -->
+
+                <!-- START MAVERICK BREED SECTION -->
+                <h5>
+                    <div class="card-header collapsed" data-toggle="collapse" data-parent="#maverickaccordion" href="#maverickbreed">
+                        <a class="card-title ml-2" href="#">
+               Maverick Breed
+                </a>
+                    </div>
+                    <!-- card header -->
+                </h5>
+                <div id="maverickbreed" class="card-block collapse">
+                    <p>For Christmas we purchased Wisdom Panel DNA tests for our rescue pups. I was anxious to see what breeds they actually were. Maverick was labeled as a Lab mix when we adopted her. Here's what the Wisdom Panel results showed:
+                    </p>
+                    <img class="img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/MaverickBreedGraph.png" alt="Maverick Breed Breakdown Pie Chart">
+                    <img class="img-fluid" src="http://kbolster.webhost4life.com/FullStackDeveloper/DogTribute/Images/MaverickBreedKey.png" alt="Maverick Breed Breakdown Key">
+                    <p>I was surprised to not see lab on there. His ears seem very "labby" to me. Regardless, he's a great pup no matter what the breed makeup!</p>
+                </div>
+                <!-- maverick breed -->
+                <!-- END MAVERICK BREED SECTION -->
+
+                <!--START MAVERICK TEMPERMENT SECTION -->
+                <h5>
+                    <div class="card-header collapsed" data-toggle="collapse" data-parent="#maverickaccordion" href="#mavericktemperment">
+
+                        <a class="card-title ml-2" href="#">
+                     Maverick Temperment
+                </a>
+                    </div>
+                    <!-- card-header -->
+                </h5>
+                <div id="mavericktemperment" class="card-block collapse">
+                    <!--class="panel-collapse collapse">-->
+                    <p>Maverick's temperment is amazing. I have never seen such a chill dog in my life. He loves to play and is by no means a dud, however, not much phases him. He is definitely a zen, go with the flow type pup. His feathers don't get ruffled
+                        easily and he's up for anything. He is the perfect balance for the intensity of Peanut's personality. The only thing that tends to get under Mav's skin are birds. He does not love birds and will bark at them and chase them in the
+                        yard.
+                    </p>
+                    <p>I would have to say that Maverick's favorite thing ever is to play with other dogs. He LOVES to play with any and all other dogs. He seems to get along with everyone and would keep playing for hours if he could. He's also taken up
+                        swimming which I find very exciting - he'll swim out in the pond to fetch a toy. This is a new development so we'll have to see if it sticks.</p>
+                    <p>Some of Maverick's quirks is that he is a total nibbler. He likes to nibble things with his front teeth. Peanut loves it and I imagine it feels like a massage to her. He has a blanky (we could have named him Linus) that he drags around
+                        the house with and periodically nibbles little circles out of. We call him the dog moth. He also has the worst smelling farts I've ever come in contact with. Perhaps the moth behavior and his stinky butt are related!</p>
+                    <p>All in all we couldn't be luckier to have such a sweet, obedient, up for anything pup. He makes us laugh and smile everyday and I couldn't be happier we have him!</p>
+                </div>
+                <!-- mavericktemperment-->
+                <!-- END MAVERICK TEMPERMENT SECTION -->
+            </div>
+            <!--class="card m-b-0" -->
+        </div>
+        <!-- accordion -->
+    </div>
+    <!--maverickaccordioncontainer -->
+    <!-- END OF MAVERICK ACCORDION  -->
+    <!-- END OF ACCORDION SECTION -->
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+    <!-- My own script to get the accordions to react to links properly -->
+    <!-- START CUSTOM SCRIPT -->
+    <script>
+        // I only want one accordion at a time to show at a time on the screen
+        // Therefore, if a link is clicked, I need to show that accordion and hide
+        // the other one.
+        // First Parameter: accordionToShow = accordion to show
+        // Second Paramter: accordionToHide= accordion to hide
+        function ShowAccordionContainer(accordionToShow, accordionToHide) {
+            // This will show the accordion sent by the function call 
+            $(accordionToShow).collapse('show');
+
+            // This will hide the accordion sent by the function call 
+            $(accordionToHide).collapse('hide');
+
+            adjustLearnMoreButtonText();
+
+        }
+
+
+        // I only want one accordion at a time to show at a time on the screen.
+        // In addition - I would like the "Learn More About <DogName>" buttons to
+        // control whether or not the accordion for that dog is visible to the user.
+        // So, when the button is clicked we are going to evaluate the accordion state
+        // and act accordingly.
+        // If the button is clicked and that dogs accordion is visible, we will hide it and 
+        // make the text of the button say "Learn More About <DogName>.
+        // If the button is clicked and that dogs accordion is NOT visible, we will show it
+        // and make the text on the button say "Learn Less About <DogName>.
+        // We also need to hide the other accordion if we are showing one that was previously
+        // not visible.
+        // First Parameter: accordionToShow = the id of the accordion to show
+        // Second Parameter: accordionToHide = the id of the accordion to hide
+        // Third Parameter: buttonClicked = the id of the button that was clicked to trigger the event
+        function EvaluateLearnMoreButtonClick(buttonClicked) {
+            var vDogName;
+            var vButtonClickedName;
+            var vCurrentlyVisible;
+
+            //  alert($('#peanutaccordioncontainer').attr('aria-expanded'));
+            //$('#peanutaccordioncontainer').collapse('show');
+            //alert($('#peanutaccordioncontainer').attr('aria-expanded'));
+
+            // store the text for whichever accordion is going to be shown
+            // make it lower case so we're good for comparison bc case matters
+            vButtonClickedName = $(buttonClicked).text().toLowerCase();
+            // vCurrentlyVisible = $('#peanutaccordioncontainer').toString();
+
+
+            // Check if it is Peanut or Maverick's accordion and
+            // set the name accordingly
+            if (vButtonClickedName.indexOf('peanut') >= 0) {
+                //set the dog name variable for future use
+                vDogName = 'Peanut';
+
+                // see if the Peanut's accordion is currently visible
+                //alert('at eval: ' + $('#peanutaccordioncontainer').attr('aria-expanded'));
+                // This is the way to determine if it's expanded or not 'aria-expanded'
+                if ($('#peanutaccordioncontainer').attr('aria-expanded') == 'false') {
+                    // Peanut's accordian is NOT visible so make it visible and change the
+                    // text on the buton. Also - hide Maverick's in case it was showing
+                    // and alter his button text in case it was changed earlier
+
+                    // Show Peanut's accordian
+                    $('#peanutaccordioncontainer').collapse('show');
+                    // Update Peanut's button text 
+                    $('#peanutlearnmore').text('Learn Less About Peanut');
+                    // Hide Mav's accordian
+                    $('#maverickaccordioncontainer').collapse('hide');
+                    // Update Maverick's button text 
+                    $('#mavericklearnmore').text('Learn More About Maverick');
+                } else {
+                    // Peanut's accordian IS visible so make it invisible and change the
+                    // text on the buton. Don't do anything with Maverick's bc his
+                    // should be in a non-visible correct word state based current
+                    // situation
+
+                    //Hide Peanut's Accordion
+                    $('#peanutaccordioncontainer').collapse('hide');
+                    // Update Peanut's button text 
+                    $('#peanutlearnmore').text('Learn More About Peanut');
+                }
+
+            } else if (vButtonClickedName.indexOf('maverick') >= 0) {
+                //set the dog name variable for future use
+                vDogName = 'Maverick';
+
+                // This is the way to determine if it's expanded or not 'aria-expanded'
+                if ($('#maverickaccordioncontainer').attr('aria-expanded') == 'false') {
+                    // Maverick's accordian is NOT visible so make it visible and change the
+                    // text on the buton. Also - hide Peanut's in case it was showing
+                    // and alter her button text in case it was changed earlier
+
+                    // Show Maverick's accordian
+                    $('#maverickaccordioncontainer').collapse('show');
+                    // Update Maverick's button text 
+                    $('#mavericklearnmore').text('Learn Less About Maverick');
+                    // Hide Peanut's accordian
+                    $('#peanutaccordioncontainer').collapse('hide');
+                    // Update Peanut's button text 
+                    $('#peanutlearnmore').text('Learn More About Peanut');
+                } else {
+                    // Maverick's accordian IS visible so make it invisible and change the
+                    // text on the buton. Don't do anything with Peanuts's bc it
+                    // should be in a non-visible correct word state based current
+                    // situation
+
+                    //Hide Maverick's Accordion
+                    $('#maverickaccordioncontainer').collapse('hide');
+                    // Update Peanut's button text 
+                    $('#mavericklearnmore').text('Learn More About Maverick');
+                }
+
+            }
+        }
+
+        function adjustLearnMoreButtonText() {
+            // For Peanut
+            if ($('#peanutaccordioncontainer').attr('aria-expanded') == 'false') {
+                // Peanut's accordion is NOT visible
+                $('#peanutlearnmore').text('Learn More About Peanut');
+            } else {
+                // Peanut's accordion IS visible
+                $('#peanutlearnmore').text('Learn Less About Peanut');
+            }
+
+            // For Maverick
+            if ($('#maverickaccordioncontainer').attr('aria-expanded') == 'false') {
+                // Maverick's accordion is NOT visible
+                $('#mavericklearnmore').text('Learn More About Maverick');
+            } else {
+                // Maverick's accordion IS visible
+                $('#mavericklearnmore').text('Learn Less About Maverick');
+            }
+
+        }
+    </script>
+
+    <!-- END CUSTOM SCRIPT -->
+
+</body>
+
+</html>
